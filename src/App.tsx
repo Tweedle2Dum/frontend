@@ -1,10 +1,13 @@
+import RouteProvider from "../Components/Providers/RouteProvider";
+import AppProvider from "../Components/Providers/AppProvider";
 function App() {
-
   return (
     <>
-      Hello world
+      <AppProvider>
+        <RouteProvider />
+      </AppProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
